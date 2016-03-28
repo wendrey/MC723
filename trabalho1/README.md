@@ -49,7 +49,11 @@ O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas m�
 
 ### Convolução
 
-O script deste benchmark (disponível na página do mesmo) processa convoluções em images tridimensionais, uma operação fundamental em processamento de imagens. A imagem é um cubo com lado de 150 voxels. As medidas escolhidas foram: o tempo de execução, tempo médio de escrita em disco e tempo médio de leitura do disco. As máquinas utilizadas neste benchmark e os dados obtidos seguem nas duas tabelas abaixo.
+O script deste benchmark (disponível na página do mesmo) processa convoluções em images tridimensionais, uma operação fundamental em processamento de imagens. A imagem do teste é um cubo com lado de 150 voxels. As medidas escolhidas foram: o tempo de execução, tempo médio de escrita em disco e tempo médio de leitura do disco. As máquinas utilizadas neste benchmark e os dados obtidos seguem nas duas tabelas abaixo.
+
+Os melhores tempos de execução são da máquina 10 (com processador intel core i7 2630QM e tempo de 7,01 segundos), máquina 7 (com processador intel core i7 3612QM e tempo de 7,60 segundos) e máquina 3 (7,90 segundos). Os piores tempos são das máquinas 8 (com processador intel core2 Quad e tempo de 123,70 segundos), 6 (89,60 segundos) e 4 (com processador intel core i7 3612QM e tempo de 36,30 segundos). É interessante notar que o processador intel core i7 3612QM da máquina 7 também tem uma avaliação positiva no benchmark do FFmpeg por estar em duas das três máquinas com melhores tempos de execução, porém neste benchmark de convolução o processador também se encontra na máquina 4, que possui um dos piores tempos. Novamente, o processador intel core2 Quad está entre as máquinas de pior tempo de execução.
+
+A máquina com melhor eficiência não possui a maior taxa de escrita nem de leitura. A melhor taxa de escrita (4031 MB/s) é de uma máquina que contém SSD, como seria esperado, já que SSDs têm tempo de acesso menor que HDDs, porém essa máquina possui a terceira maior taxa de leitura (1758 MB/s). A melhor taxa de leitura é da máquina 5 (1840MB/s), que possui um HDD de 5400 rpm. O grande problema deste benchmark está na sua confiabilidade, pois os valores de escritas e leituras estão muito elevados, essas taxas deveriam estar em 300 a 500 MB/s, porém a maioria das taxas de leitura calculadas estão acima de 1000 MB/s e as de escrita estão acima de 2000 MB/s.  
 
 | Computer | Core | Clock | Cache Memory Disk |
 |:---------:|:---:|:-----:|:-----------------:|
