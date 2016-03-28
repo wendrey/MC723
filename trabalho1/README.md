@@ -92,7 +92,7 @@ O pior tempo de execução é da máquina 9 (com processador intel atom e tempo 
 
 É coerente que a máquina 8 tenha o menor tempo de execução, visto que possui a maior frequência de ciclos (3,427 GHz) e a maior taxa de instruções por ciclo (1,793 IPC). A maior quantidade de ciclos segue com as máquinas 2 (com processador intel core i7 e 2,913 GHz) e 4 (com processador intel core i7 3612QM e 2,821 GHz), enquanto a maior taxa de instruções por ciclo segue com as máuqinas 7 (com processador intel core i5 5200U e 1,358 IPC) e 4 (1,270 IPC).
 
-Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do processador. A maior média de CPUs é da máquina 1 (com processador AMD PhenonII e 1,779 CPUs), seguida das máquinas 2 (1,684 CPUs) e 4 (1,449 CPUs). A menor média de CPUs é da máquina 9 (com processador intel atom e 1,165 CPUs), seguida das máquinas 6 (1,204 CPUs) e 5 (1,232 CPUs), ambas com processador intel core2 Quad Q8400.
+Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do processador. A maior média de CPUs é da máquina 1 (com processador AMD PhenonII e 1,779 CPUs), seguida das máquinas 2 (1,684 CPUs) e 4 (1,449 CPUs). A menor média de CPUs é da máquina 9 (com processador intel atom e 1,165 CPUs), seguida das máquinas 6 (1,204 CPUs) e 5 (1,232 CPUs), ambas com processador intel core2 Quad Q8400. No geral, este benchmark também avalia de forma ruim o processador intel core2 Quad Q8400, e destaca positivamente os processadores intel core i7 3612QM, i5 5200U e i5 4590.
 
 | Computer | Core | Clock | Cache Memory Disk |
 |:--------:|:----:|:-----:|:-----------------:|
@@ -119,4 +119,7 @@ Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do p
 | 9 | 766,77 | 1,165 | 1,653 | 0,483 |
 
 ### Conclusão
+
+Infelizmente, algumas máquinas têm poucas informações disponíveis acerca de sua configuração para avaliação. Por exemplo, a máquina mostrado como número 2 no benchmark do ImageMagick e número 3 no benchmark de convolução, que foi bem avaliada nos dois testes não especifica o processador intel core i7 que possui. Ainda assim, como foram disponibizadas várias máquinas nos dois teste, pode-se ter uma boa avaliação geral das máquinas e mais espeficamente dos processadores, visto que o clock e memória principal das máquinas pouco diferem uma das outras.
+
 
