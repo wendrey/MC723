@@ -17,33 +17,33 @@ Espera-se que numa máquina com maior memória RAM, a quantidade e page faults s
 
 O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas máquinas 5 (16,64 segundos), 8 (18,19 segundos). E os piores tempos são das máquinas 3 (69,65 segundos), 9 (32,83 segundos) e 2 (32,58 segundos). O processador intel core i7 4700HQ da máquina 10 apresentou o melhor desempenho na execução, confirmando a eficiência esperada do processador. As máquinas 5 e 8 possuem o mesmo processador (intel core i7 3612QM), sendo então coerente afirmar a eficiência do processador, já que essas máquinas obtiveram o segundo e terceiro melhores tempos. Fato semelhante ocorre com os piores tempos das máquinas 3 e 9: ambas possuem processadores da família intel core2. Apesar da máquina 9 ter o dobro de cores da máquina 3 (e cerca de metade do tempo de execução), o fato de possuírem os piores tempos torna verossímel a baixa eficiência desses processadores. 
 
-| Computer | Core | Clock | Cache Memory Disk |
+| Computer | Rank | Core | Clock | Cache Memory Disk |
 |:--------:|:----:|:-----:|:-----------------:|
-| 1 | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
-| 2 | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 3 | Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
-| 4 | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
-| 5 | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
-| 6 | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
-| 7 | Intel Core i7 3740QM x 2 | --- | --- |
-| 8 | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
-| 9 | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 10 | Intel Core i7 4700HQ x 4 | 2.40 GHz | 16GB RAM HDD SATA III 7200rpm |
-| 11 | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
-| 12 | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
+| 1 | | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
+| 2 | -- | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
+| 3 | --- |Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
+| 4 | | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
+| 5 | *** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
+| 6 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
+| 7 | | Intel Core i7 3740QM x 2 | --- | --- |
+| 8 | * | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
+| 9 | -- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
+| 10 | *** | Intel Core i7 4700HQ x 4 | 2.40 GHz | 16GB RAM HDD SATA III 7200rpm |
+| 11 | | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
+| 12 | | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
 
 | Computer | Time [s] | Page Faults | Stalled Cycles [G] | L1 Cache Load Misses [M] |
 |:--------:|:--------:|:-----------:|:------------------:|:------------------------:|
 | 1 | 29,60 | 29 618 | 149 800 | 2 377 |
-| 2 -- |	32,58 | 16 470 | 17 251 | 918 |
-| 3 --- | 69,65 |	12 112 | --- | 2 120 |
+| 2 |	32,58 | 16 470 | 17 251 | 918 |
+| 3 | 69,65 |	12 112 | --- | 2 120 |
 | 4 |	27,70 |	25 000 | --- | 2 532 |
-| 5 ** | 16,64 |	29 942 | 151 896 |	2 316 |
+| 5 | 16,64 |	29 942 | 151 896 |	2 316 |
 | 6 | 31,49	| 16 509 | --- | 2 358 |
 | 7 | 29,73 | 14 145 | --- | --- |
-| 8 * | 18,19 | 25 168 | 148 667 | 2 307 |
-| 9 -- |	32,83 | 21 057 | --- | 2 157 |
-| 10 *** | 14,84 | 25 172 | --- |	2 482 |
+| 8 | 18,19 | 25 168 | 148 667 | 2 307 |
+| 9 |	32,83 | 21 057 | --- | 2 157 |
+| 10 | 14,84 | 25 172 | --- |	2 482 |
 | 11 | 30,86 | 16 225	| --- | 2 608 |
 | 12 | 19,88 | 20 475	| --- |	1 234 |
 
@@ -55,19 +55,19 @@ Os melhores tempos de execução são da máquina 10 (com processador intel core
 
 A máquina com melhor eficiência não possui a maior taxa de escrita nem de leitura. A melhor taxa de escrita (4031 MB/s) é da máquina 7, que contém SSD, como seria esperado, já que SSDs têm tempo de acesso menor que HDDs, porém essa máquina possui apenas a terceira maior taxa de leitura (1758 MB/s). A melhor taxa de leitura é da máquina 5 (1840MB/s), que possui um HDD de 5400 rpm, seguida das máquinas 1 (1780 MB/s) e 7 (1758 MB/s) e as piores são das máquinas 8 (11 MB/s), 2 (14 MB/s) e 11 (82 MB/s). As melhores e piores taxas de escrita são, respectivamente, das máquinas 7 (4031 MB/s), 3 (3703 MB/s) e 5 (3144 MB/s) e das máquinas 2 (92 MB/s), 8 (878 MB/s) e 4 (2021 MB/s). O grande problema deste benchmark está na sua confiabilidade, pois os valores de escritas e leituras (supostamentes no disco) estão muito elevados, essas taxas deveriam estar em 300 a 500 MB/s, porém a maioria das taxas de leitura calculadas estão acima de 1000 MB/s e as de escrita estão acima de 2000 MB/s. É provável, portanto, que esses valores de escrita e leitura estejam relacionados também à memória principal. Além disso, nota-se que não necessariamente uma maior taxa de escrita e leitura determina um menor tempo de execução, por exemplo, a máquina 4 leva quase o triplo de tempo da máquina 2, mesmo tendo taxas de leitura e escritas muito melhores.
 
-| Computer | Core | Clock | Cache Memory Disk |
-|:---------:|:---:|:-----:|:-----------------:|
-| 1 | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
-| 2 | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 3 | Intel Core i7 × 4 | --- | 8GB RAM | --- |;
-| 4 | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
-| 5 | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
-| 6 | Intel Core i7 3740QM x 2 | --- | --- |
-| 7 | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
-| 8 | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 9 | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
-| 10 | Intel Core i7 2630QM | 2.00 GHz | 4GB RAM |
-| 11 | Intel Core i7 | 2.30 GHz | 8GB RAM |
+| Computer | Rank | Core | Clock | Cache Memory Disk |
+|:--------:|:----:|:---:|:-----:|:-----------------:|
+| 1 | | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
+| 2 | | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
+| 3 | * | Intel Core i7 × 4 | --- | 8GB RAM | --- |;
+| 4 | - | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
+| 5 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
+| 6 | -- | Intel Core i7 3740QM x 2 | --- | --- |
+| 7 | ** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
+| 8 | --- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
+| 9 | | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
+| 10 | *** | Intel Core i7 2630QM | 2.00 GHz | 4GB RAM |
+| 11 | | Intel Core i7 | 2.30 GHz | 8GB RAM |
 
 | Computer | Time [s] | Read Rate [MB/s] | Write Rate [MB/s] |
 |:--------:|:--------:|:----------------:|:-----------------:|
@@ -94,17 +94,17 @@ O pior tempo de execução é da máquina 9 (com processador intel atom e tempo 
 
 Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do processador. A maior média de CPUs é da máquina 1 (com processador AMD PhenonII e 1,779 CPUs), seguida das máquinas 2 (1,684 CPUs) e 4 (1,449 CPUs). A menor média de CPUs é da máquina 9 (com processador intel atom e 1,165 CPUs), seguida das máquinas 6 (1,204 CPUs) e 5 (1,232 CPUs), ambas com processador intel core2 Quad Q8400. No geral, este benchmark também avalia de forma ruim o processador intel core2 Quad Q8400, e destaca positivamente os processadores intel core i7 3612QM, i5 5200U e i5 4590.
 
-| Computer | Core | Clock | Cache Memory Disk |
-|:--------:|:----:|:-----:|:-----------------:|
-| 1 | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 2 | Intel Core i7 × 4 | --- | 8GB RAM | --- |
-| 3 | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 4 | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
-| 5 | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 6 | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 7 | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
-| 8 | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
-| 9 | Intel Atom Processor | --- | --- |
+| Computer | Rank | Core | Clock | Cache Memory Disk |
+|:--------:|:----:|:----:|:-----:|:-----------------:|
+| 1 | | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
+| 2 | ** | Intel Core i7 × 4 | --- | 8GB RAM | --- |
+| 3 | | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
+| 4 | | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
+| 5 | -- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
+| 6 | - | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
+| 7 | * | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
+| 8 | *** | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
+| 9 | --- | Intel Atom Processor | --- | --- |
 
 | Computer | Time [s] | CPU | Cycles [GHz] | IPC |
 |:--------:|:--------:|:---:|:------------:|:---:|
