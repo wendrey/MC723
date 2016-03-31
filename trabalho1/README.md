@@ -23,7 +23,7 @@ O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas m�
 | 2 | - | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
 | 3 | --- | Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
 | 4 | | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
-| 5 | *** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
+| 5 | ** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
 | 6 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
 | 7 | | Intel Core i7 3740QM x 2 | --- | --- |
 | 8 | * | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
@@ -127,20 +127,20 @@ Analizando os processadores, destacan-se positivamente os processadores
 | Benchmark | Rank |Computer Core |
 |:-:|:-:|:-:|
 | FFmpeg | *** | Intel Core i7 4700HQ x 4 |
-| FFmpeg | ** | |
-| FFmpeg | * | |
-| FFmpeg | - | |
-| FFmpeg | -- | |
-| FFmpeg | --- | |
-| Convolução | *** | |
-| Convolução | ** | |
-| Convolução | * | |
-| Convolução | - | |
-| Convolução | -- | |
-| Convolução | --- | |
-| ImageMagick | *** | |
-| ImageMagick | ** | |
-| ImageMagick | * | |
-| ImageMagick | - | |
-| ImageMagick | -- | |
-| ImageMagick | --- | |
+| FFmpeg | ** | Intel Core i7 3612QM x 4 |
+| FFmpeg | * | Intel Core i7 3612QM x 4	|
+| FFmpeg | - | AMD PhenonII x 4	|
+| FFmpeg | -- | Intel Core2 Quad Q8400 x 4 |
+| FFmpeg | --- | Intel Core2 Duo T6500 x 2 |
+| Convolução | *** | Intel Core i7 2630QM |
+| Convolução | ** | Intel Core i7 3612QM x 4 |
+| Convolução | * | Intel Core i7 × 4 |
+| Convolução | - | Intel Core i7 3612QM x 4 |
+| Convolução | -- | Intel Core i7 3740QM x 2|
+| Convolução | --- | Intel Core2 Quad Q8400 x 4	|
+| ImageMagick | *** | Intel Core i5 4590 x 4 |
+| ImageMagick | ** | Intel Core i7 × 4 |
+| ImageMagick | * | Intel Core i5 5200U x 4 |
+| ImageMagick | - | Intel Core2 Quad Q8400 x 4 |
+| ImageMagick | -- | Intel Core2 Quad Q8400 x 4	|
+| ImageMagick | --- | Intel Atom Processor |
