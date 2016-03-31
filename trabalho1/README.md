@@ -7,7 +7,9 @@ Wendrey Lustosa Cardoso
 
 Para avaliar o desempenho das máquinas, vários computadores foram testados usando-se diferentes benchmarks. Os benchmarks usados que são destacados neste relatórios fazem referência ao [FFmpeg](https://github.com/RodolfoSeki/MC723/tree/master/projeto1), [Convolução](https://github.com/yugo4k/2016s1.mc723a.projeto1.parte1) e [ImageMagick](https://github.com/FelipeEmos/mc723/tree/master/projeto1/benchmark1). Todos computadores testados em cada benchmark são analisados comparativamente em relação às suas configurações e resultados nos tópicos subsequentes. Em seguida, segue uma comparação mais geral sobre os computadores específicos e comuns aos três benchmarks aqui destacados. 
 
-Como não havia um padrão a seguir sobre que configurações deveriam ser disponibilizadas sobre as máquinas, há várias divergências de contéudo, então tentou-se simplificar as informações dadas e analisar apenas as configurações comumente apresentadas. 
+Como não havia um padrão a seguir sobre que configurações deveriam ser disponibilizadas sobre as máquinas, há várias divergências de contéudo, então tentou-se simplificar as informações dadas e analisar apenas as configurações comumente apresentadas.
+
+Os ranks estão representados da seguinte maneira: primeiro melhor = '***', segundo melhor = '**', terceiro melhor = '*', terceiro pior = '-', segundo pior = '--', primeiro pior = '---'. 
 
 ### FFmpeg
 
