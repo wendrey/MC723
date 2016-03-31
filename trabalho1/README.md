@@ -20,7 +20,7 @@ O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas m�
 | Computer | Rank | Core | Clock | Cache Memory Disk |
 |:--------:|:----:|:----:|:-----:|:-----------------:|
 | 1 | | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
-| 2 | -- | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
+| 2 | - | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
 | 3 | --- | Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
 | 4 | | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
 | 5 | *** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
@@ -123,3 +123,24 @@ Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do p
 Infelizmente, algumas máquinas têm poucas informações disponíveis acerca de sua configuração para avaliação. Por exemplo, a máquina mostrado como número 2 no benchmark do ImageMagick e número 3 no benchmark de convolução, que foi bem avaliada nos dois testes não especifica o processador intel core i7 que possui. Ainda assim, como foram disponibizadas várias máquinas nos dois teste, pode-se ter uma boa avaliação geral das máquinas e mais espeficamente dos processadores, visto que o clock e memória principal das máquinas pouco diferem uma das outras.
 
 Analizando os processadores, destacan-se positivamente os processadores 
+
+| Benchmark | Rank |Computer Core |
+|:-:|:-:|:-:|
+| FFmpeg | *** | Intel Core i7 4700HQ x 4 |
+| FFmpeg | ** | |
+| FFmpeg | * | |
+| FFmpeg | - | |
+| FFmpeg | -- | |
+| FFmpeg | --- | |
+| Convolução | *** | |
+| Convolução | ** | |
+| Convolução | * | |
+| Convolução | - | |
+| Convolução | -- | |
+| Convolução | --- | |
+| ImageMagick | *** | |
+| ImageMagick | ** | |
+| ImageMagick | * | |
+| ImageMagick | - | |
+| ImageMagick | -- | |
+| ImageMagick | --- | |
