@@ -124,7 +124,9 @@ Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do p
 
 Infelizmente, algumas máquinas têm poucas informações disponíveis acerca de sua configuração para avaliação. Por exemplo, a máquina mostrado como número 2 no benchmark do ImageMagick e número 3 no benchmark de convolução, que foi bem avaliada nos dois testes não especifica o processador intel core i7 que possui. Ainda assim, como foram disponibizadas várias máquinas nos dois teste, pode-se ter uma boa avaliação geral das máquinas e mais espeficamente dos processadores, visto que o clock e memória principal das máquinas pouco diferem uma das outras.
 
-Analizando os processadores, destacan-se positivamente os processadores 
+Analizando os processadores e os benchmarks, destacam-se o processador intel core i7 3612QM, que aparece três vezes entre os melhores dos benchmarks de FFmpeg e Convolução, apesar de aparecer uma vez com rank ruim no benchmark de convolução. Melhores que este processador estão os processadores intel core i7 4700HQ e intel core i7 2630QM, que aparecem em apenas um benchmark cada, na primeira colocação. Um outro processaor intel core i7 também foi bem quassificado, aparecendo entre os melhores do rank de Convolução e do ImageMagick, mas não foi especificado. Ainda no benchmark do ImageMagick, foram avaliados positivamente os computadores intel core i5 4590, em primeiro lugar e o processador intel core i5 5200 U.
+
+
 
 | Benchmark | Rank |Computer Core |
 |:-:|:-:|:-:|
