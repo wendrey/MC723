@@ -18,10 +18,10 @@ Espera-se que numa máquina com maior memória RAM, a quantidade e page faults s
 O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas máquinas 5 (16,64 segundos), 8 (18,19 segundos). E os piores tempos são das máquinas 3 (69,65 segundos), 9 (32,83 segundos) e 2 (32,58 segundos). O processador intel core i7 4700HQ da máquina 10 apresentou o melhor desempenho na execução, confirmando a eficiência esperada do processador. As máquinas 5 e 8 possuem o mesmo processador (intel core i7 3612QM), sendo então coerente afirmar a eficiência do processador, já que essas máquinas obtiveram o segundo e terceiro melhores tempos. Fato semelhante ocorre com os piores tempos das máquinas 3 e 9: ambas possuem processadores da família intel core2. Apesar da máquina 9 ter o dobro de cores da máquina 3 (e cerca de metade do tempo de execução), o fato de possuírem os piores tempos torna verossímel a baixa eficiência desses processadores. 
 
 | Computer | Rank | Core | Clock | Cache Memory Disk |
-|:--------:|:----:|:-----:|:-----------------:|
+|:--------:|:----:|:----:|:-----:|:-----------------:|
 | 1 | | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
 | 2 | -- | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 3 | --- |Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
+| 3 | --- | Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
 | 4 | | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
 | 5 | *** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
 | 6 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
