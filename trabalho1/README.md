@@ -9,7 +9,7 @@ Para avaliar o desempenho das máquinas, vários computadores foram testados usa
 
 Como não havia um padrão a seguir sobre que configurações deveriam ser disponibilizadas sobre as máquinas, há várias divergências de contéudo, então tentou-se simplificar as informações dadas e analisar apenas as configurações comumente apresentadas.
 
-Os ranks estão representados da seguinte maneira: primeiro melhor = '***', segundo melhor = '**', terceiro melhor = '*', terceiro pior = '-', segundo pior = '--', primeiro pior = '---'. 
+Os ranks estão representados da seguinte maneira: primeiro melhor = '+++', segundo melhor = '++', terceiro melhor = '+', terceiro pior = '-', segundo pior = '--', primeiro pior = '---'. 
 
 ### FFmpeg
 
@@ -25,12 +25,12 @@ O menor tempo de execução é da máquina 10 (14,84 segundos), seguida pelas m�
 | 2 | - | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
 | 3 | --- | Intel Core2 Duo T6500 x 2 | 2.10 GHz | 4GB RAM |
 | 4 | | Intel Core i7 4702MQ x 4 | 2.20 GHz | 8GB RAM |
-| 5 | ** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
+| 5 | ++ | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
 | 6 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
 | 7 | | Intel Core i7 3740QM x 2 | --- | --- |
-| 8 | * | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
+| 8 | + | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
 | 9 | -- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 10 | *** | Intel Core i7 4700HQ x 4 | 2.40 GHz | 16GB RAM HDD SATA III 7200rpm |
+| 10 | +++ | Intel Core i7 4700HQ x 4 | 2.40 GHz | 16GB RAM HDD SATA III 7200rpm |
 | 11 | | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
 | 12 | | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
 
@@ -61,14 +61,14 @@ A máquina com melhor eficiência não possui a maior taxa de escrita nem de lei
 |:--------:|:----:|:---:|:-----:|:-----------------:|
 | 1 | | Intel Core i7 3610QM x 4 | 2.30 GHz | L1 256KB |
 | 2 | | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 3 | * | Intel Core i7 × 4 | --- | 8GB RAM | --- |;
+| 3 | + | Intel Core i7 × 4 | --- | 8GB RAM | --- |;
 | 4 | - | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 32GB HDD 1TB 5400rpm |
 | 5 | | Intel Core i7 4510U x 2 | 2.00 GHz | 8GB RAM | HD 5400rpm |
 | 6 | -- | Intel Core i7 3740QM x 2 | --- | --- |
-| 7 | ** | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
+| 7 | ++ | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
 | 8 | --- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
 | 9 | | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
-| 10 | *** | Intel Core i7 2630QM | 2.00 GHz | 4GB RAM |
+| 10 | +++ | Intel Core i7 2630QM | 2.00 GHz | 4GB RAM |
 | 11 | | Intel Core i7 | 2.30 GHz | 8GB RAM |
 
 | Computer | Time [s] | Read Rate [MB/s] | Write Rate [MB/s] |
@@ -99,13 +99,13 @@ Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do p
 | Computer | Rank | Core | Clock | Cache Memory Disk |
 |:--------:|:----:|:----:|:-----:|:-----------------:|
 | 1 | | AMD PhenonII x 4 | 3.2 MHz | 32MB Buffer 10GB RAM HDD SATA III 7200rpm |
-| 2 | ** | Intel Core i7 × 4 | --- | 8GB RAM | --- |
+| 2 | ++ | Intel Core i7 × 4 | --- | 8GB RAM | --- |
 | 3 | | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
 | 4 | | Intel Core i7 3612QM x 4 | 2.10 GHz | 8GB RAM SSD 240GB |
 | 5 | -- | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
 | 6 | - | Intel Core2 Quad Q8400 x 4 | 2.66 GHz | 4GB |
-| 7 | * | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
-| 8 | *** | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
+| 7 | + | Intel Core i5 5200U x 4 | 2.20 GHz | L1 32KB 8GB RAM HDD 1TB |
+| 8 | +++ | Intel Core i5 4590 x 4 | 3.30 GHz | 8GB RAM HDD 216.9 GB |
 | 9 | --- | Intel Atom Processor | --- | --- |
 
 | Computer | Time [s] | CPU | Cycles [GHz] | IPC |
@@ -128,15 +128,15 @@ Analizando os processadores, destacan-se positivamente os processadores
 
 | Benchmark | Rank |Computer Core |
 |:-:|:-:|:-:|
-| FFmpeg | *** | Intel Core i7 4700HQ x 4 |
-| FFmpeg | ** | Intel Core i7 3612QM x 4 |
-| FFmpeg | * | Intel Core i7 3612QM x 4	|
-| Convolução | *** | Intel Core i7 2630QM |
-| Convolução | ** | Intel Core i7 3612QM x 4 |
-| Convolução | * | Intel Core i7 × 4 |
-| ImageMagick | *** | Intel Core i5 4590 x 4 |
-| ImageMagick | ** | Intel Core i7 × 4 |
-| ImageMagick | * | Intel Core i5 5200U x 4 |
+| FFmpeg | +++ | Intel Core i7 4700HQ x 4 |
+| FFmpeg | ++ | Intel Core i7 3612QM x 4 |
+| FFmpeg | + | Intel Core i7 3612QM x 4	|
+| Convolução | +++ | Intel Core i7 2630QM |
+| Convolução | ++ | Intel Core i7 3612QM x 4 |
+| Convolução | + | Intel Core i7 × 4 |
+| ImageMagick | +++ | Intel Core i5 4590 x 4 |
+| ImageMagick | ++ | Intel Core i7 × 4 |
+| ImageMagick | + | Intel Core i5 5200U x 4 |
 | FFmpeg | - | AMD PhenonII x 4	|
 | FFmpeg | -- | Intel Core2 Quad Q8400 x 4 |
 | FFmpeg | --- | Intel Core2 Duo T6500 x 2 |
