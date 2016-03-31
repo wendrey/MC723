@@ -129,18 +129,18 @@ Analizando os processadores, destacan-se positivamente os processadores
 | FFmpeg | *** | Intel Core i7 4700HQ x 4 |
 | FFmpeg | ** | Intel Core i7 3612QM x 4 |
 | FFmpeg | * | Intel Core i7 3612QM x 4	|
-| FFmpeg | - | AMD PhenonII x 4	|
-| FFmpeg | -- | Intel Core2 Quad Q8400 x 4 |
-| FFmpeg | --- | Intel Core2 Duo T6500 x 2 |
 | Convolução | *** | Intel Core i7 2630QM |
 | Convolução | ** | Intel Core i7 3612QM x 4 |
 | Convolução | * | Intel Core i7 × 4 |
-| Convolução | - | Intel Core i7 3612QM x 4 |
-| Convolução | -- | Intel Core i7 3740QM x 2|
-| Convolução | --- | Intel Core2 Quad Q8400 x 4	|
 | ImageMagick | *** | Intel Core i5 4590 x 4 |
 | ImageMagick | ** | Intel Core i7 × 4 |
 | ImageMagick | * | Intel Core i5 5200U x 4 |
+| FFmpeg | - | AMD PhenonII x 4	|
+| FFmpeg | -- | Intel Core2 Quad Q8400 x 4 |
+| FFmpeg | --- | Intel Core2 Duo T6500 x 2 |
+| Convolução | - | Intel Core i7 3612QM x 4 |
+| Convolução | -- | Intel Core i7 3740QM x 2|
+| Convolução | --- | Intel Core2 Quad Q8400 x 4	|
 | ImageMagick | - | Intel Core2 Quad Q8400 x 4 |
 | ImageMagick | -- | Intel Core2 Quad Q8400 x 4	|
 | ImageMagick | --- | Intel Atom Processor |
