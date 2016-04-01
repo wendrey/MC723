@@ -9,7 +9,7 @@ Para avaliar o desempenho das máquinas, vários computadores foram testados usa
 
 Como não havia um padrão a seguir sobre que configurações deveriam ser disponibilizadas sobre as máquinas, há várias divergências de contéudo, então tentou-se simplificar as informações dadas e analisar apenas as configurações comumente apresentadas.
 
-Os ranks estão representados da seguinte maneira: primeiro melhor = '+++', segundo melhor = '++', terceiro melhor = '+', terceiro pior = '-', segundo pior = '--', primeiro pior = '---'. 
+Os ranks estão representados da seguinte maneira: primeiro melhor = '+++', segundo melhor = '++', terceiro melhor = '+', terceiro pior = '-', segundo pior = '--', primeiro pior = '---'. A classificação tem como único parâmetro o tempo gasto na execução do programa do benchmark.
 
 ### FFmpeg
 
@@ -122,11 +122,11 @@ Com a quantidade de CPUs utilizadas, pode-se ter uma noção do paralelismo do p
 
 ### Conclusão
 
-Infelizmente, algumas máquinas têm poucas informações disponíveis acerca de sua configuração para avaliação. Por exemplo, a máquina mostrado como número 2 no benchmark do ImageMagick e número 3 no benchmark de convolução, que foi bem avaliada nos dois testes não especifica o processador intel core i7 que possui. Ainda assim, como foram disponibizadas várias máquinas nos dois teste, pode-se ter uma boa avaliação geral das máquinas e mais espeficamente dos processadores, visto que o clock e memória principal das máquinas pouco diferem uma das outras.
+Infelizmente, algumas máquinas têm poucas informações disponíveis acerca de sua configuração para avaliação. Por exemplo, a máquina mostrado como número 2 no benchmark do ImageMagick e número 3 no benchmark de convolução, que foi bem avaliada nos dois testes não especifica o processador intel core i7 que possui. Ainda assim, como foram disponibizadas várias máquinas nos dois teste, pode-se ter uma boa avaliação geral das máquinas e mais espeficamente dos processadores, visto que o clock e memória principal das máquinas pouco diferem uma das outras, e pouco influenciam nos valores obtidos. Com um pequeno conhecimento geral de processadores e suas eficiências (de acordo com benchmarks externos à este projeto), percebe-se que os resultados estão satisfatoriamente coerentes. Segue abaixo uma tabela com os melhores e piores processadores de cada benchmark analisado.
 
 Analizando os processadores e os benchmarks, destacam-se o processador intel core i7 3612QM, que aparece três vezes entre os melhores dos benchmarks de FFmpeg e Convolução, apesar de aparecer uma vez com rank ruim no benchmark de convolução. Melhores que este processador estão os processadores intel core i7 4700HQ e intel core i7 2630QM, que aparecem em apenas um benchmark cada, na primeira colocação. Um outro processaor intel core i7 também foi bem quassificado, aparecendo entre os melhores do rank de Convolução e do ImageMagick, mas não foi especificado. Ainda no benchmark do ImageMagick, foram avaliados positivamente os computadores intel core i5 4590, em primeiro lugar e o processador intel core i5 5200 U.
 
-Destaca-se negativamente o processador intel core2 Quad Q8400, que aparece quatro vezes entre os piores no rank geral. Além disso, os processadores intel core2 Duo T6500 e intel Atom Processor também estão como piores nos benchamrks que foram testados, devido sua péssima eficiência. Aparecendo ainda no benchmark de convolução entre os piores, estão os processadores intel core i7 3612QM e 3740QM.
+Destaca-se negativamente o processador intel core2 Quad Q8400, que aparece quatro vezes entre os piores no rank geral. Além disso, os processadores intel core2 Duo T6500 e intel Atom Processor também estão como piores nos benchamrks que foram testados, devido sua péssima eficiência. Aparecendo ainda no benchmark de convolução entre os piores, estão os processadores intel core i7 3612QM e 3740QM. 
 
 | Benchmark | Rank |Computer Core |
 |:-:|:-:|:-:|
