@@ -35,7 +35,7 @@ Pode-se agrupar as instruções em três tipos: acesso à memória (load e store
 | sha (small) | 2 579 546 | 606 891 | 9 989 203 |
 | gsm coder (large) | 354 667 842 | 91 942 660 | 1 037 866 702 |
 
-| Programa | Ciclos | Tempo de execução do simulador [s] | Clock do simulador [ciclos/s] | Tempo de execução calculado [s] |
+| Programa | Ciclos | Tempo do simulador [s] | Clock do simulador [ciclos/s] | Tempo calculado [s] |
 |:-:|:-:|:-:|:-:|:-:| 		 
 | susan | 12 330 012 | 0.08 | 154 125 150 | 0.006 |
 | sha | 37 605 336 | 0.22 | 170 933 345 | 0.017 |
