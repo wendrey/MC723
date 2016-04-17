@@ -8,6 +8,8 @@
 
 ### Exercício 2
 
+### Exercício 3
+
 ### Trabalho 1
 
 
