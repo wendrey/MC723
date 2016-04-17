@@ -19,9 +19,9 @@ O programa hello.c (disponível neste repositório) foi compilado e executado no
 
 ##### MiBench
 
-Os programas do benchmark do MIPS foram executados a partir dos scripts disponibilizados com os próprios programas. Como alguns scripts rodavam várias vezes o mesmo programa com diferentes argumentos, estes foram simplesmente modificados para executarem somente uma vez o programa com os argumentos desejados. O susan foi executado com o input referente a coners e small, enquanto o sha foi executado com input refente a small e o gsm foi executado com input de coder e large. As saídas das execuções desses programas estão disponíveis neste repositório).
+Os programas do benchmark do MIPS foram executados a partir dos scripts disponibilizados com os próprios programas. Como alguns scripts rodavam várias vezes o mesmo programa com diferentes argumentos, estes foram simplesmente modificados para executarem somente uma vez o programa com os argumentos desejados. O susan foi executado com o input referente a coners e small, enquanto o sha foi executado com input refente a small e o gsm foi executado com input de coder e large. As saídas das execuções desses programas estão disponíveis neste repositório.
 
-Pode-se agrupar as instruções em três tipos: acesso à memória (load e store), controle (jump e branch) e outras (add, or, shift, ...). Considerando o CPI médio para cada tipo de instrução, junto às estatísticas de instruções do simulador, pode-se então calcular a quantidade de ciclos utilizados na execução de cada programa. Tendo ainda informações sobre o clock do processador (neste caso 2.20 GHz x 4), pode-se então calcular o tempo de execução do programa: tempo = número de ciclos / frequência do clock. *Comparando o tempo de execução da saída do simulador e o tempo de execução aqui calculado, tem-se resultados coerentes, pois os valores absolutos são relativamente próximos*. As tabelas abaixo mostram os resultados obtidos.
+Pode-se agrupar as instruções em três tipos: acesso à memória (load e store), controle (jump e branch) e outras (add, or, shift, ...). Considerando o CPI médio para cada tipo de instrução, junto às estatísticas de instruções do simulador, pode-se então calcular a quantidade de ciclos utilizados na execução de cada programa. As tabelas abaixo mostram os resultados obtidos. É possível ver que o clock do simulador (*simulation speed*) varia de acordo com a simulação. Tendo ainda informações sobre o clock do processador (neste caso 2.20 GHz, considerando-se apenas um core e apenas a subida do clock), pode-se então calcular o tempo de execução do programa na máquina: tempo = número de ciclos / frequência do clock. Esses tempos calculados são cerca de uma ordem de grandeza menor que o tempo do simulador, visto que o clock do processador é cerca de uma ordem de grandeza maior que o clock do simulador. Como nessa abordagem inferimos o tempo de execução a partir de valores pré-estabelecidos de CPI, nada podemos afirmar sobre o desempenho do processador.
 
 | Instrução | CPI médio |
 |:-:|:-:|
@@ -35,10 +35,8 @@ Pode-se agrupar as instruções em três tipos: acesso à memória (load e store
 | sha (small) | 2 579 546 | 606 891 | 9 989 203 |
 | gsm coder (large) | 354 667 842 | 91 942 660 | 1 037 866 702 |
 
-| Programa | Ciclos | Tempo da saída do simulador [s] | Tempo calculado pelos ciclos [s] |
-|:-:|:-:|:-:|:-:| 		
-| susan | 12 330 012 | 0.08 | *0.055* |
-| sha | 37 605 336 | 0.22 | *0.205* |
-| gsm | 4 860 373 102 | 22.16 | *24.554* |
-
-= Rever valores de tempo calculados
+| Programa | Ciclos | Tempo da saída do simulador [s] | Simulation speed [ciclos/s] | Tempo de execução calculado [s] |
+|:-:|:-:|:-:|:-:|:-:| 		 
+| susan | 12 330 012 | 0.08 | 154 125 150 | 0.006 |
+| sha | 37 605 336 | 0.22 | 170 933 345 | 0.017 |
+| gsm | 4 860 373 102 | 22.16 | 219 330 916 | 2.209 |
