@@ -15,7 +15,7 @@ Foi utilizado um simulador do processador MIPS, feito utilizando ArchC, uma ling
 
 ##### Hello World
 
-O programa hello.c (disponível neste repositório) foi compilado e executado no simulador do MIPS. Com o objetivo de contar quantas vezes o instrução *add* era utilizada na execução do programa, foi modificado o arquivo *mips_isa_cpp* (disponível neste repositório): foi criada uma variável *add_counter*, que era zerada na rotina *ac_behavior(begin)*, incrementada na rotina *ac_behavior(add)* e imprimida na saída padrão na rotina *ac_behavior(end)*. O valor do contador sempre foi nulo ao término da execução da simulação. Utilizando o *objdump*, pode-se verificar que na função main do programa hello.c em assembly, há apenas instruções de addu ou addiu. Mesmo quando o programa hello.c foi alterado para realizar somas de números que deveriam resultar em overflow (um "efeito ignorado" quando a soma é realizada com *addu*), nenhuma instrução de *add* foi contabilizada. Isso acontece porque quando os programas em C são compilados, as operações de soma no arquivo em assembly são realizadas através da instrução *addu*, justamente para não haver erros ou exceções devido a ocorrência de overflows em operações de inteiros com sinais. Como consequência direta disso, é possível observar em programas em C que quando uma inteiro supera o máximo valor possível dada o tamanho da palavra em bytes e a representação de complemento de 2, ocorre overflow e o número tem seu valor "estourado", de forma a contar então a partir do menor valor possível, em outras palavras, numa arquitetura de 32 bits o número passa de 2^31-1 para -2^31.
+O programa hello.c (disponível neste repositório) foi compilado e executado no simulador do MIPS. Com o objetivo de contar quantas vezes o instrução *add* era utilizada na execução do programa, foi modificado o arquivo *mips_isa_cpp* (disponível neste repositório): foi criada uma variável *add_counter*, que era zerada na rotina *ac_behavior(begin)*, incrementada na rotina *ac_behavior(add)* e imprimida na saída padrão na rotina *ac_behavior(end)*. O valor do contador sempre foi nulo ao término da execução da simulação. Utilizando o *objdump*, pode-se verificar que na função main do programa hello.c em assembly, há apenas instruções de addu ou addiu. Mesmo quando o programa hello.c foi alterado para realizar somas de números que deveriam resultar em overflow (um "efeito ignorado" quando a soma é realizada com *addu*), nenhuma instrução de *add* foi contabilizada. Isso acontece porque quando os programas em C são compilados, as operações de soma no arquivo em assembly são realizadas através da instrução *addu*, justamente para não haver erros ou exceções devido a ocorrência de overflows em operações de inteiros com sinais. Como consequência direta disso, é possível observar em programas em C que quando um inteiro supera o máximo valor possível dado o tamanho da palavra em bytes e a representação de complemento de 2, ocorre overflow e o número tem seu valor "estourado", de forma a contar então a partir do menor valor possível, em outras palavras, numa arquitetura de 32 bits o número passa de 2^31-1 para -2^31.
 
 ##### MiBench
 
@@ -30,9 +30,9 @@ Pode-se agrupar as instruções em três tipos: acesso à memória (load e store
 
 | Programa \ Instrução | Acesso à memória | Controle | Outras |
 |:-:|:-:|:-:|:-:|
-| susan | 910 237 | 1 854 053 | 457 863 |
-| sha | 2 579 546 | 9 989 203 | 606 891 |
-| gsm | 354 667 842 | 1 037 866 702 | 91 942 660 |
+| susan coners (small) | 910 237 | 1 854 053 | 457 863 |
+| sha (small) | 2 579 546 | 9 989 203 | 606 891 |
+| gsm coder (large) | 354 667 842 | 1 037 866 702 | 91 942 660 |
 
 | Programa | Ciclos | Tempo da saída do simulador [s] | Tempo calculado pelos ciclos [s] |
 |:-:|:-:|:-:|:-:|
