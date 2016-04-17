@@ -20,7 +20,22 @@ O programa hello.c (disponível neste repositório) foi compilado e executado no
 ##### MiBench
 
 Os programas do benchmark do MIPS foram executados a partir dos scripts disponibilizados com os próprios programas. Como alguns scripts rodavam várias vezes o mesmo programa com diferentes argumentos, estes foram simplesmente modificados para executarem somente uma vez o programa com os argumentos desejados. O susan foi executado com o input referente a coners e small, enquanto o sha foi executado com input refente a small e o gsm foi executado com input de coder e large.
-Pode-se agrupar as instruções em três tipos: acesso à memória (load e store), controle (jump e branch) e outras (add, or, shift, ...). Considerando o CPI médio para cada tipo de instrução, junto às estatísticas de instruções do simulador, pode-se então calcular a quantidade de ciclos utilizados na execução de cada programa. Sabendo ainda o clock do processador, pode-se então calcular o tempo de execução do programa. As tabelas abaixo mostram os resultados obtidos.
+Pode-se agrupar as instruções em três tipos: acesso à memória (load e store), controle (jump e branch) e outras (add, or, shift, ...). Considerando o CPI médio para cada tipo de instrução, junto às estatísticas de instruções do simulador, pode-se então calcular a quantidade de ciclos utilizados na execução de cada programa. Tendo ainda informações sobre o clock do processador (neste caso 2.20 GHz x 4), pode-se então calcular o tempo de execução do programa: tempo = número de ciclos / frequência do clock. Comparando o tempo de execução da saída do simulador e o tempo de execução aqui calculado, tem-se resultados coerentes, pois os valores absolutos são relativamente próximos. As tabelas abaixo mostram os resultados obtidos.
 
+| Instrução | CPI médio |
+|:-:|:-:|
+| Acesso à memória (load/store) | 10 |
+| Controle (jump/branch) | 3 |
+| Outras | 1 |
 
+| Programa \ Instrução | Acesso à memória | Controle | Outras |
+|:-:|:-:|:-:|:-:|
+| susan | 910 237 | 1 854 053 | 457 863 |
+| sha | 2 579 546 | 9 989 203 | 606 891 |
+| gsm | 354 667 842 | 1 037 866 702 | 91 942 660 |
 
+| Programa | Ciclos | Tempo da saída do simulador [s] | Tempo calculado pelos ciclos [s] |
+|:-:|:-:|:-:|:-:|
+| susan | 15 122 392 | 0.08 | 0.055 |
+| sha | 56 369 960 | 0.22 | 0.205 |
+| gsm | 6 752 221 186 | 22.16 | 24.554 |
