@@ -40,3 +40,5 @@ Pode-se agrupar as instruções em três tipos: acesso à memória (load e store
 | susan | 12 330 012 | 0.08 | *0.055* |
 | sha | 37 605 336 | 0.22 | *0.205* |
 | gsm | 4 860 373 102 | 22.16 | *24.554* |
+
+= Rever valores de tempo calculados
