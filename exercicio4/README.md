@@ -17,7 +17,7 @@ O programa **hello_base.c** foi usado para escrever no endereço base do perifé
 
 O ponteiro de acesso ao periférico precisa ser declarado como *volatile*, que indica que a variável pode ser alvo de modificação assíncrona concorrente por parte de outras threads em execução. Isso impede que o compilador faça otimizações em leituras ou escritas e reuse um valor incorreto para leitura ou nâo realize a escrita, ou seja, evita inconsistências. Variáveis desse tipo são usadas no acesso a hardware, onde leituras e escritas são usadas na comunicação com periféricos.
 
-O programa **hello_read.c** foi usado para ler várias vezes do periférico e imprimir os valores obtidos (arquivo de saída **out_read**). Como não realizamos escritas os valores lidos são todos um (valor de retorno padrão definido em **ac_tlm_peripheral.cpp** caso haja mais de uma leitura após a última escrita), que devido a conversão para big endian e depois para decimal resulta em 16777216 na saída padrão. É interessante notar que a posição do lock mostrada na saída do programa possui passos de 04 unidades, que correspondem ao tamanho de um inteiro em bytes.
+O programa **hello_read.c** foi usado para ler várias vezes do periférico e imprimir os valores obtidos (arquivo de saída **out_read**). Como não realizamos escritas, os valores lidos são todos um (valor de retorno padrão definido em **ac_tlm_peripheral.cpp** caso haja mais de uma leitura após a última escrita), que devido a conversão para big endian e depois para decimal resulta em 16777216 na saída padrão. É interessante notar que a posição do lock mostrada na saída do programa possui passos de 04 unidades, que correspondem ao tamanho de um inteiro em bytes.
 
 ### Plataforma Multicore
 
