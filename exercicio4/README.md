@@ -11,7 +11,7 @@ O sistema operacional trata cada um dos núcleos de processamento existentes com
 
 Periféricos são equipamentos, acessórios ou aparelhos que enviam ou recebem informações da CPU (impressoras, leitores de CDs e cartões de memória, pen drive, mouses, teclados). Cada periférico tem uma função específica, desempenhada ao enviar e receber tarefas do computador.
 
-# Metodologia
+### Metodologia
 
-# Resultados
+### Resultados
 
