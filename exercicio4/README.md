@@ -13,7 +13,7 @@ Periféricos são equipamentos, acessórios ou aparelhos que enviam ou recebem i
 
 ### Periférico Base
 
-O programa *hello_base.c* foi usado para escrever no endereço base do periférico. Quando executado pelo simulador do mips, observamos na saída do mesmo (arquivo de saída *out_base*), o endereço e o valor (big endian) escritos no periférico em hexadecimal. Porém quando realizamos a leitura do valor escrito, recebemos como retorno zero. Para receber o valor escrito no periférico, alteramos o arquivo *ac_tlm_peripheral.cpp* para armazenar o último valor escrito e retorná-lo quando realizada uma leitura.
+O programa **hello_base.c** foi usado para escrever no endereço base do periférico. Quando executado pelo simulador do mips, observamos na saída do mesmo (arquivo de saída ***out_base***), o endereço e o valor (big endian) escritos no periférico em hexadecimal. Porém quando realizamos a leitura do valor escrito, recebemos como retorno zero. Para receber o valor escrito no periférico, alteramos o arquivo *ac_tlm_peripheral.cpp* para armazenar o último valor escrito e retorná-lo quando realizada uma leitura.
 
 O ponteiro de acesso ao periférico precisa ser declarado como *volatile*, que indica que a variável pode ser alvo de modificação assíncrona concorrente por parte de outras threads em execução. Isso impede que o compilador faça otimizações em leituras ou escritas e reuse um valor incorreto para leitura ou nâo realize a escrita, ou seja, evita inconsistências. Variáveis desse tipo são usadas no acesso a hardware, onde leituras e escritas são usadas na comunicação com periféricos.
 
