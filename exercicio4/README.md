@@ -37,4 +37,3 @@ _Como a impressão da matriz resultante não pode ser paralelizada, e representa
 |||||
 | 0 | multicore | 3266854 | 0.39 |
 | 1 | multicore | 3266855 | 0.39 |
-
