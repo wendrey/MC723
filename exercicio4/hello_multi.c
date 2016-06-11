@@ -44,9 +44,9 @@ void sum () {
 
 void sub () {
 
-    int i, j;
+    	int i, j;
 
-    for (i = 0; i < SIZE; i++)
+	 for (i = 0; i < SIZE; i++)
 	        for (j = 0; j < SIZE; j++)
 			M2[i][j] = i-j;
 							   
