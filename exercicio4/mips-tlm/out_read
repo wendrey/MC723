@@ -1,0 +1,35 @@
+
+        SystemC 2.3.1-Accellera --- Mar 31 2016 17:15:46
+        Copyright (c) 1996-2014 by all Contributors,
+        ALL RIGHTS RESERVED
+ArchC: Reading ELF application file: hello_read.mips
+ArchC: -------------------- Starting Simulation --------------------
+
+hello world: value 0 address 104857600
+hello world: value 16777216 address 104857604
+hello world: value 16777216 address 104857608
+hello world: value 16777216 address 104857612
+hello world: value 16777216 address 104857616
+hello world: value 16777216 address 104857620
+hello world: value 16777216 address 104857624
+hello world: value 16777216 address 104857628
+hello world: value 16777216 address 104857632
+hello world: value 16777216 address 104857636
+hello world: value 16777216 address 104857640
+hello world: value 16777216 address 104857644
+hello world: value 16777216 address 104857648
+hello world: value 16777216 address 104857652
+hello world: value 16777216 address 104857656
+hello world: value 16777216 address 104857660
+hello world: value 16777216 address 104857664
+hello world: value 16777216 address 104857668
+hello world: value 16777216 address 104857672
+hello world: value 16777216 address 104857676
+ArchC: -------------------- Simulation Finished --------------------
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+ArchC: Simulation statistics
+    Times: 0.01 user, 0.00 system, 0.00 real
+    Number of instructions executed: 130778
+    Simulation speed: (too fast to be precise)
+
